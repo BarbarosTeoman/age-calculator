@@ -1,6 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+  --purple: hsl(259, 100%, 65%);
+  --red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-gray: hsl(0, 0%, 86%);
+  --smokey-gray: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--light-gray);
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 10px 10px 50px 10px;
+}
+
+.top {
+  display: flex;
+
+}
+
+.day, .month, .year {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+label {
+  font-size: x-small;
+  letter-spacing: 3px;
+  color: var(--smokey-gray);
+  margin-bottom: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  color: var(--smokey-gray);
+  width: 120px;
+  font-size: x-large;
+  font-weight: 700;
+  padding: 10px 0 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.5px solid var(--light-gray);
+  cursor: pointer;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr {
+  background-color: var(--light-gray);
+  width: 450px;
+  height: 0.5px;
+  margin-top: 35px;
+}
+
+button {
+  margin-top: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: var(--purple);
+}
+
+button:hover {
+  background-color: var(--off-black);
+  cursor: pointer;
+}
+
+.bottom {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+span {
+  color: var(--purple);
+}
+
+p {
+  margin-top: -20px;
+}
